@@ -38,9 +38,10 @@ Run this command in terminal:
     
     
 ## Directories Information
-- `dataset/`: Folder that contain the dataset, such as: `train/`, `val/`, and `test/` folder.
-- `output/`: Folder that contain the output message for each train itteration.
-- `runs/`: Folder that contain all of the output after training process.
+- `dataset/`: Contains the dataset used for training, validation, and testing. Subdirectories include `train/`, `val/`, and `test/` directories.
+- `output/`: Stores output logs or messages generated during each training iteration.
+- `pre-trained`: Holds pre-trained models used as a starting point for further training on the dataset.
+- `runs/`: Includes all results and artifacts generated from the training process, such as model checkpoints and metrics.
 
 ## License
 This repository follows the license guidelines of the original YOLOv11 project. For more details, refer to the [YOLOv11 License](https://docs.ultralytics.com/models/yolo11/#what-are-the-key-improvements-in-ultralytics-yolo11-compared-to-previous-versions)
