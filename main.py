@@ -5,7 +5,11 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 def train_model():
     # Load model
+<<<<<<< HEAD
     model = YOLO("--YOUR PRE-TRAINED PATH--") # ex: gigi/pre-trained/yolo11n.pt
+=======
+    model = YOLO("--YOUR PRE-TRAINED PATH--")
+>>>>>>> d7c8d8d6da05ea68994c62f1ff31a9d697007b65
 
     # Custom training function with mAP50-95 early stopping
     class EarlyStopOnMap:
@@ -26,7 +30,11 @@ def train_model():
 
     # Start training
     results = model.train(
+<<<<<<< HEAD
         data="--YOUR DATASET PATH--", # ex:gigi/dataset/data.yaml
+=======
+        data="--YOUR DATASET PATH--",
+>>>>>>> d7c8d8d6da05ea68994c62f1ff31a9d697007b65
         epochs=5,
         imgsz=640,
         device=0,
