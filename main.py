@@ -5,7 +5,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 def train_model():
     # Load model
-    model = YOLO("D:/post_kuliah/test1/yolo11n.pt")
+    model = YOLO("--YOUR PRE-TRAINED PATH--")
 
     # Custom training function with mAP50-95 early stopping
     class EarlyStopOnMap:
@@ -26,7 +26,7 @@ def train_model():
 
     # Start training
     results = model.train(
-        data="D:/post_kuliah/test1/dataset/data.yaml",
+        data="--YOUR DATASET PATH--",
         epochs=5,
         imgsz=640,
         device=0,
