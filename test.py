@@ -46,6 +46,6 @@ for result in results:
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
 # Display the image with the results
-cv2.imshow('YOLOv8 Posture Detection', image)
+cv2.imshow('YOLOv11 Dental Radiograph Detection', image)
 cv2.waitKey(0)  # Wait for a key press to close the image window
 cv2.destroyAllWindows()

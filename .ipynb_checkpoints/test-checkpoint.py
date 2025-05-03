@@ -3,7 +3,7 @@ import time
 from ultralytics import YOLO
 
 # Load the YOLOv8 model (update path to your custom model)
-model = YOLO("--YOUR PRE-TRAINED PATH--")  # ex: gigi/runs/detect/train19/weights/best.pt
+model = YOLO("--YOUR NEW AFTER TRAIN PRE-TRAINED PATH--")  # ex: gigi/runs/detect/train19/weights/best.pt
 
 # Load the image (replace 'path_to_image.jpg' with the actual path to your image)
 image_path = "--YOUR IMAGE PATH--" # ex: gigi/dataset/test/images/0071_jpg.rf.21ad37cd3c68265bb73add88bbb2cee9.jpg
@@ -46,6 +46,6 @@ for result in results:
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
 # Display the image with the results
-cv2.imshow('YOLOv8 Posture Detection', image)
+cv2.imshow('YOLOv11 Dental Radiograph Detection', image)
 cv2.waitKey(0)  # Wait for a key press to close the image window
 cv2.destroyAllWindows()
