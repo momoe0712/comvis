@@ -26,12 +26,12 @@ Open the `main.py` file and set the path for model and the dataset.
 2. For Testing:
 Open the `test.py` file and set the path for the pre-trained model and the path for input photo.
 
-## Training: 
+## Training 
 Run this command in terminal:
     
     python main.py
     
-## Testing:
+## Testing
 Run this command in terminal:
     
     python test.py
